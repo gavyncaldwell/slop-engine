@@ -1,0 +1,8 @@
+{
+  "extends": "@slop-engine/tsconfig/node.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}
