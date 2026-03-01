@@ -1,4 +1,4 @@
-# AI Arcade - AI-Powered RPG Game Engine
+# Slop Engine - AI-Powered RPG Game Engine
 
 ## Project Overview
 
@@ -37,27 +37,32 @@ Phase 1: Expression Language (lexer, Pratt parser, tree-walking interpreter)
 
 Pre-reading: Crafting Interpreters chapters 4-8, Pratt parsing blog post
 
+## Commands
+
+```bash
+bun test              # Run all tests
+bun run lint          # Lint with Biome
+bun run format        # Format with Biome (auto-fix)
+```
+
 ## Tech Stack
 
 - **Runtime:** Bun
 - **Language:** TypeScript
-- **Monorepo:** Turborepo (planned)
-- **Database:** SQLite (via Bun's built-in driver)
-- **Rendering:** Canvas 2D
-- **AI:** Anthropic/Google/Groq APIs via Vercel AI SDK
-- **Validation:** Zod
-- **Embeddings:** all-MiniLM-L6-v2 via @xenova/transformers
+- **Monorepo:** Bun workspaces
+- **Linting/Formatting:** Biome
 
-## Project Structure (Planned)
+## Project Structure
 
-Monorepo with packages:
-- Expression language (lexer, parser, evaluator)
-- IR schema & validation
-- Database layer
-- Tile engine & renderer
-- ECS & core systems
-- RPG game systems
-- AI integration / server
+```
+packages/
+  expr-lang/          # Expression language (lexer, parser, evaluator)
+  tsconfig-base/      # Shared TypeScript configs (node, browser)
+```
+
+## Code Style
+
+Enforced by Biome: double quotes, semicolons, 2-space indent, 100 char line width.
 
 ## Phase Milestones
 
