@@ -1,7 +1,9 @@
 {
   "name": "slop-engine",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "bun test",
     "lint": "bunx --bun biome check .",
