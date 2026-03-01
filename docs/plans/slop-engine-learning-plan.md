@@ -1,5 +1,5 @@
-# AI Arcade: Learning & Project Plan
-
+# Slop Engine: Learning & Project Plan
+2
 ## Where You Are
 
 **Strengths you're bringing:**
