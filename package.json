@@ -1,0 +1,10 @@
+{
+  "name": "slop-engine",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "test": "bun test",
+    "lint": "bunx --bun biome check .",
+    "format": "bunx --bun biome format --write ."
+  }
+}
